@@ -1,15 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\core",
-    "\\core\\class",
-    "\\core\\template",
-    "\\core\\template\\dashboard",
-    "\\core\\template\\mobile",
-    "\\data",
-    "\\docs",
-    "\\docs\\fr_FR"
+    ""
   ],
-  "SelectedNode": "\\docs\\fr_FR\\changelog.md",
   "PreviewInSolutionExplorer": false
 }
