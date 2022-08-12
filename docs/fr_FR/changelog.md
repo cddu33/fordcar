@@ -4,7 +4,24 @@
 >
 >S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.
 
-> Pour actualiser les nouvelles commandes disponnibles, sauvegarder l'équipement
+
+# 06/08/2022 (beta)
+
+Rajout d'information pour les voitures électrique
+
+Reprise version mobile
+
+# 05/08/2022 (beta)
+
+Bouton pour forcer l'actualisation (30s mini avantle retour d'info)
+
+# 03/08/2022 (beta)
+
+Cron pour l'actualisation des information modifiable depuis l'équipement, de base 15min
+
+# 02/08/2022
+
+Actualisation automatique des commandes après une mise à jour
 
 # 31/07/2022
 

@@ -24,13 +24,6 @@ $eqLogics = eqLogic::byType($plugin->getId());
 				<br>
 				<span>{{Configuration}}</span>
 			</div>
-			<!--
-			<div class="cursor eqLogicAction logoSecondary" data-action="fordcar::refresh">
-				<i class="fas fa-wrench"></i>
-				<br>
-				<span>{{Forcer l'actualisation}}</span>
-			</div>
-			-->
 		</div>
 		<legend><i class="fas fa-table"></i> {{Mes véhicules}}</legend>
 		<?php
@@ -124,12 +117,10 @@ $eqLogics = eqLogic::byType($plugin->getId());
 								</div>
 							</div>
 
-							<!-- Exemple de champ de saisie du cron d'auto-actualisation avec assistant 
-							<!-- La fonction cron de la classe du plugin doit contenir le code prévu pour que ce champ soit fonctionnel 
-							
+				
 							<div class="form-group">
 								<label class="col-sm-4 control-label">{{Auto-actualisation}}
-									<sup><i class="fas fa-question-circle tooltips" title="{{Fréquence de rafraîchissement des commandes infos du véhicule; On interoge le serveur pas directement la voiture}}"></i></sup>
+									<sup><i class="fas fa-question-circle tooltips" title="{{Fréquence de rafraîchissement (15min par défaut) des commandes infos du véhicule; On interoge le serveur pas directement la voiture}}"></i></sup>
 								</label>
 								<div class="col-sm-6">
 									<div class="input-group">
@@ -141,11 +132,9 @@ $eqLogics = eqLogic::byType($plugin->getId());
 										</span>
 									</div>
 								</div>
-							</div>-->
+							</div>
 						</div>
                         
-						<!-- Partie droite de l'onglet "Équipement" -->
-						<!-- Affiche un champ de commentaire par défaut mais vous pouvez y mettre ce que vous voulez -->
 						<div class="col-lg-6">
 							<legend><i class="fas fa-info"></i> {{Informations}}</legend>
 							<div class="form-group">
