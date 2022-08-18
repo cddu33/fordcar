@@ -754,6 +754,7 @@ class fordcar extends eqLogic {
 	if ($fordcar_json === null) {
 		log::add('fordcar', 'debug', 'Relance de la commande dans 2s car erreur ' . $fordcar_cmd);
 		sleep(2);
+
 		exec($fordcar_cmd . ' >> ' . log::getPathToLog('fordcar') . ' 2>&1 &');
 		sleep(3);
 		$fordcar_json = json_decode(file_get_contents($fordcar_fichier), true);
