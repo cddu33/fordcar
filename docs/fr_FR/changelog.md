@@ -9,8 +9,31 @@
 
 >
 >Toutes les informations interprétées par le plugin sont disponible dans les log en mode debug.
+>
+# 26/08/2022 (beta)
 
-# 18/08/2022
+Corrections pressions unité
+
+Correction refresh widget
+
+Correction type véhicule
+
+# 25/08/2022 (beta)
+
+Corrections porte arrière droite
+
+Corrections widget en mode hybride
+
+
+# 24/08/2022 (beta)
+
+Corrections pressions inversées
+
+Corrections gestion de l'état des fênetres
+
+Support des informations pour les hybrides
+
+# 20/08/2022
 
 Corrections messages json
 
