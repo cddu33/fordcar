@@ -9,7 +9,36 @@
 
 >
 >Toutes les informations interprétées par le plugin sont disponible dans les log en mode debug.
->
+
+# 07/09/2022
+
+Reprise des versions beta des 4 6 et 7 septembre 
+
+
+# 07/09/2022 (beta)
+Simplification du script python
+
+Les messages d'erreur doivent être plus explicite
+
+Correction autonomie
+
+# 06/09/2022 (beta)
+Modification des dépendances: 
+- intégration du script python
+- utilisation du nouveau système de Jeedom
+
+# 04/09/2022 (beta)
+
+Rajout informations hybride et electrique:
+- véhicule branché
+- type de charge
+
+Dépandance V4 package
+
+# 31/08/2022 Stable
+Reprise des version beta 26 25 24 aout
+
+
 # 26/08/2022 (beta)
 
 Corrections pressions unité
