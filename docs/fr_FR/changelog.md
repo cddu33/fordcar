@@ -10,6 +10,11 @@
 >
 >Toutes les informations interprétées par le plugin sont disponible dans les log en mode debug.
 
+
+# 18/10/2022
+
+Passage en stable
+
 # 11/09/2022 (beta)
 
 suppression cron daily non fonctionnel pour le moment
