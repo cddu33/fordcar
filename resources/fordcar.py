@@ -287,7 +287,10 @@ elif sys.argv[4] == "stop":
 	r.stop();
 elif sys.argv[4] == "refresh":
 	r.refresh();
+elif sys.argv[4] == "signal":
+	r.signal();
+elif sys.argv[4] == "signaloff":
+	r.signaloff();
 elif sys.argv[4] == "statut":
     with open(sys.argv[5], "w+") as json_file:
-        #print(r.status())
         json.dump(r.status(), json_file)
