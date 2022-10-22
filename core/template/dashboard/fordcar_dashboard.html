@@ -149,9 +149,10 @@
 			else {
                 $('.Cmd#etat_id#').empty().append('<i class="fa-2x fas fa-ban"></i>');
             }
-		}
-        jeedom.cmd.refreshValue([{cmd_id :'#etat_id#', display_value: '#etat#'}]);
+		});
 
+        jeedom.cmd.refreshValue([{cmd_id :'#etat_id#',display_value: '#etat#'}]);
+    
         jeedom.cmd.addUpdateFunction('#last_id#',function(_options) {
             if (_options.display_value == "0" || _options.display_value == "") {
                 $('.Cmd#last_id#').empty().append('<i class="fas fa-ban"></i>');
@@ -162,7 +163,7 @@
            
                 $('.Cmd#last_id#').empty().append('<span>' + datelast1.toLocaleString() + '</span>');
             }
-        }
+        });
 		jeedom.cmd.refreshValue([{cmd_id :'#last_id#', display_value: '#last#' }]); 
 
         jeedom.cmd.addUpdateFunction('#long_id#',function(_options) {
@@ -172,7 +173,7 @@
             else {
                 $('.Cmd#long_id#').empty().append('<span>' + _options.display_value + '</span>');
             }
-        }
+        });
 		jeedom.cmd.refreshValue([{cmd_id :'#long_id#', display_value: '#long#' }]);
 
         jeedom.cmd.addUpdateFunction('#lat_id#',function(_options) {
@@ -182,7 +183,7 @@
             else {
                 $('.Cmd#lat_id#').empty().append('<span>' + _options.display_value + '</span>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#lat_id#', display_value: '#lat#' }]);
 
         jeedom.cmd.addUpdateFunction('#prpnardr_id#',function(_options) {
@@ -190,7 +191,7 @@
                 $('.Cmd#prpnardr_id#').empty().append('<i class="fas fa-ban"></i>');
             }
             else { $('.Cmd#prpnardr_id#').empty().append('<span>' + _options.display_value + '</span>'); }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#prpnardr_id#', display_value: '#prpnardr#', unit: "#unite#"}]);
         
 
@@ -199,7 +200,7 @@
                 $('.Cmd#prpnavdr_id#').empty().append('<i class="fas fa-ban"></i>');
             }
             else { $('.Cmd#prpnavdr_id#').empty().append('<span>' + _options.display_value + '</span>'); }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#prpnavdr_id#', display_value: '#prpnavdr#', unit: "#unite#"}]);
 
         jeedom.cmd.addUpdateFunction('#prpnavgh_id#',function(_options) {
@@ -207,7 +208,7 @@
                 $('.Cmd#prpnavgh_id#').empty().append('<i class="fas fa-ban"></i>');
             }
             else { $('.Cmd#prpnavgh_id#').empty().append('<span>' + _options.display_value + '</span>'); }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#prpnavgh_id#', display_value: '#prpnavgh#', unit: "#unite#"}]);
 
         jeedom.cmd.addUpdateFunction('#prpnargh_id#',function(_options) {
@@ -215,7 +216,7 @@
                 $('.Cmd#prpnargh_id#').empty().append('<i class="fas fa-ban"></i>');
             }
             else { $('.Cmd#prpnargh_id#').empty().append('<span>' + _options.display_value + '</span>'); }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#prpnargh_id#', display_value: '#prpnargh#', unit: "#unite#"}]);
 
         jeedom.cmd.addUpdateFunction('#tbat_id#',function(_options) {
@@ -223,7 +224,7 @@
                 $('.Cmd#tbat_id#').empty().append('<i class="fas fa-ban"></i>');
             }
             else { $('.Cmd#tbat_id#').empty().append('<span>' + _options.display_value + 'V</span>'); }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#tbat_id#', display_value: '#tbat#'}]);
 
         jeedom.cmd.addUpdateFunction('#huile_id#',function(_options) {
@@ -231,7 +232,7 @@
                 $('.Cmd#huile_id#').empty().append('<i class="fas fa-ban"></i>');
             }
             else { $('.Cmd#huile_id#').empty().append('<span>' + _options.display_value + '% propre</span>'); }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#huile_id#', display_value: '#huile#'}]);
 
         jeedom.cmd.addUpdateFunction('#maj_id#',function(_options) {
@@ -241,7 +242,7 @@
             else {
                 $('.Cmd#maj_id#').empty().append('<i class="icon_green fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#maj_id#', display_value: '#maj#'}]);
 
         jeedom.cmd.addUpdateFunction('#veille_id#',function(_options) {
@@ -251,7 +252,7 @@
             else {
                 $('.Cmd#veille_id#').empty().append('<i class="icon_green fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#veille_id#', display_value: '#veille#'}]);
 
         jeedom.cmd.addUpdateFunction('#ehuile_id#',function(_options) {
@@ -267,7 +268,7 @@
             else {
                 $('.Cmd#ehuile_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#ehuile_id#', display_value: '#ehuile#'}]);
 
         jeedom.cmd.addUpdateFunction('#hbat_id#',function(_options) {
@@ -283,7 +284,7 @@
             else {
                 $('.Cmd#hbat_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#hbat_id#', display_value: '#hbat#'}]);
 
 		jeedom.cmd.addUpdateFunction('#doorcd_id#',function(_options) {
@@ -296,7 +297,7 @@
 			else {
               	$('.Cmd#doorcd_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#doorcd_id#', display_value: '#doorcd#'}]);
 		
 		jeedom.cmd.addUpdateFunction('#doorleft_id#',function(_options) {
@@ -309,7 +310,7 @@
 			else {
               	$('.Cmd#doorleft_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#doorleft_id#', display_value: '#doorleft#'}]);
 		
 		jeedom.cmd.addUpdateFunction('#doorps_id#',function(_options) {
@@ -322,7 +323,7 @@
 			else {
               	$('.Cmd#doorps_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#doorps_id#', display_value: '#doorps#'}]);
 		
 		jeedom.cmd.addUpdateFunction('#doorright_id#',function(_options) {
@@ -335,7 +336,7 @@
 			else {
               	$('.Cmd#doorright_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+		});
         jeedom.cmd.refreshValue([{cmd_id :'#doorright_id#', display_value: '#doorright#'}]);
 		
 		jeedom.cmd.addUpdateFunction('#vicdav_id#',function(_options) {
@@ -351,7 +352,7 @@
 			else {
               	$('.Cmd#vicdav_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+		});
         jeedom.cmd.refreshValue([{cmd_id :'#vicdav_id#', display_value: '#vicdav#'}]);
 		
 		jeedom.cmd.addUpdateFunction('#vicdar_id#',function(_options) {
@@ -367,7 +368,7 @@
 			else {
               	$('.Cmd#vicdar_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+		});
         jeedom.cmd.refreshValue([{cmd_id :'#vicdar_id#', display_value: '#vicdar#'}]);
 		
 		jeedom.cmd.addUpdateFunction('#vipsav_id#',function(_options) {
@@ -383,7 +384,7 @@
 			else {
               	$('.Cmd#vipsav_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+		});
         jeedom.cmd.refreshValue([{cmd_id :'#vipsav_id#', display_value: '#vipsav#'}]);
 		
 		jeedom.cmd.addUpdateFunction('#vipsar_id#',function(_options) {
@@ -399,7 +400,7 @@
 			else {
               	$('.Cmd#vipsar_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+		});
         jeedom.cmd.refreshValue([{cmd_id :'#vipsar_id#', display_value: '#vipsar#'}]);
 				
 		jeedom.cmd.addUpdateFunction('#hood_id#',function(_options) {
@@ -412,7 +413,7 @@
 			else {
               	$('.Cmd#hood_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+		});
         jeedom.cmd.refreshValue([{cmd_id :'#hood_id#', display_value: '#hood#'}]);
 
         jeedom.cmd.addUpdateFunction('#tailgate_id#',function(_options) {
@@ -425,7 +426,7 @@
 			else {
               	$('.Cmd#tailgate_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#tailgate_id#', display_value: '#tailgate#'}]);
 
         jeedom.cmd.addUpdateFunction('#innertailgate_id#',function(_options) {
@@ -438,7 +439,7 @@
 			else {
               	$('.Cmd#innertailgate_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#innertailgate_id#', display_value: '#innertailgate#'}]);
 
         jeedom.cmd.addUpdateFunction('#etpnavgh_id#',function(_options) {
@@ -448,7 +449,7 @@
             else {
                 $('.Cmd#etpnavgh_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-		}
+		});
         jeedom.cmd.refreshValue([{cmd_id :'#etpnavgh_id#', display_value: '#etpnavgh#'}]);
 
         jeedom.cmd.addUpdateFunction('#etpnavdr_id#',function(_options) {
@@ -458,7 +459,7 @@
             else {
                 $('.Cmd#etpnavdr_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#etpnavdr_id#', display_value: '#etpnavdr#'}]);
 
         jeedom.cmd.addUpdateFunction('#etpnardr_id#',function(_options) {
@@ -468,7 +469,7 @@
             else {
                 $('.Cmd#etpnardr_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#etpnardr_id#', display_value: '#etpnardr#'}]);
 
         jeedom.cmd.addUpdateFunction('#etpnargh_id#',function(_options) {
@@ -478,7 +479,7 @@
             else {
                 $('.Cmd#etpnargh_id#').empty().append('<i class="fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#etpnargh_id#', display_value: '#etpnargh#'}]);
 	
 		jeedom.cmd.addUpdateFunction('#km_id#',function(_options) {
@@ -488,12 +489,12 @@
 			else {
 				$('.Cmd#km_id#').empty().append('<span>' + _options.display_value + '</span> <small>km</small>');
 			}
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#km_id#', display_value: '#km#'}]);
 	
 		jeedom.cmd.addUpdateFunction('#kmfuel_id#',function(_options) {
            	$('.Cmd#kmfuel_id#').empty().append('<span><i>'+' '+_options.display_value+'kms</i> restants'+'</span>');
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#kmfuel_id#', display_value: '#kmfuel#'}]);
 		
 		
@@ -508,12 +509,12 @@
             else {
                 $('.Cmd#qfuel_id#').empty().append(' <i class="icon_red fas fa-exclamation"></i><span> ' + ' Volume restant : <i>' + _options.display_value + '%</i> ' + '</span >');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#qfuel_id#', display_value: '#qfuel#'}]);
 		
         jeedom.cmd.addUpdateFunction('#elVehDTE_id#',function(_options) {
            	$('.Cmd#elVehDTE_id#').empty().append('<span><i>'+' '+_options.display_value+'kms</i> restants'+'</span>');
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#elVehDTE_id#', display_value: '#elVehDTE#'}]);
 
         jeedom.cmd.addUpdateFunction('#batteryFillLevel_id#',function(_options) {
@@ -527,7 +528,7 @@
             else {
                 $('.Cmd#batteryFillLevel_id#').empty().append(' <i class="icon_red fas fa-exclamation"></i><span> ' + ' Charge restante : <i>' + _options.display_value + '%</i> ' + '</span >');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#batteryFillLevel_id#', display_value: '#batteryFillLevel#'}]);
 
         jeedom.cmd.addUpdateFunction('#connectorStatus_id#',function(_options) {
@@ -538,7 +539,7 @@
             else {
                 $('.Cmd#connectorStatus_id#').empty().append('<i class="icon_green fas fa-ban"></i>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#connectorStatus_id#', display_value: '#connectorStatus#'}]);
 
         jeedom.cmd.addUpdateFunction('#chargingStatus_id#',function(_options) {
@@ -549,7 +550,7 @@
             else {
                 $('.Cmd#chargingStatus_id#').empty().append('<span><i>' + _options.display_value + '</i>' + '</span>');
             }
-        }
+        });
         jeedom.cmd.refreshValue([{cmd_id :'#chargingStatus_id#', display_value: '#chargingStatus#'}]);
 	</script>
 
