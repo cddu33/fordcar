@@ -10,6 +10,8 @@
 >
 >Toutes les informations interprétées par le plugin sont disponible dans les log en mode debug.
 
+# 22/10/2022
+correction bug python dépendance pkce
 
 # 18/10/2022
 
