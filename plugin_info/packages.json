@@ -5,6 +5,16 @@
     },
     "pip3" : {
       "requests"  : {},
-      "wheel" : {}
+      "wheel" : {},
+      "json" : {},  
+      "time" : {},
+      "logging" : {},
+      "sys" : {},  
+      "os" : {},
+      "time" : {},
+      "json" : {},
+      "pkce" : {}
+    
+    import pkce, json, time, logging, requests, sys, os, time, json
     }
 } 
