@@ -6,11 +6,6 @@
     "pip3" : {
       "requests"  : {},
       "wheel" : {},
-      "json" : {},  
-      "time" : {},
-      "logging" : {},
-      "time" : {},
-      "json" : {},
       "pkce" : {}
     }
 } 
