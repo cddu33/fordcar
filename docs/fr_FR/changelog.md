@@ -12,6 +12,7 @@
 
 # 22/10/2022
 correction bug python dépendance pkce
+rajout compatibilité affichage jeedom 4.3
 
 # 18/10/2022
 
