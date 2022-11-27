@@ -715,7 +715,7 @@ class fordcar extends eqLogic {
 		$replace['#vehicle_type#'] = $this->getCmd(null, 'vehicle_type'); 
 							
 
-		$this->emptyCacheWidget(); 		//vide le cache. Pratique pour le développement
+		//$this->emptyCacheWidget(); 		//vide le cache. Pratique pour le développement
 
 		// Traitement des commandes infos
 		foreach ($this->getCmd('info') as $cmd) {
@@ -770,7 +770,8 @@ class fordcar extends eqLogic {
 		exec($fordcar_cmd . ' >> ' . log::getPathToLog('fordcar') . ' 2>&1 &');
 		sleep(5);
 		$fordcar_json = json_decode(file_get_contents($fordcar_fichier), true);
-		
+		log::add('fordcar', 'debug', 'Fichier Json:  ' . $fordcar_json
+	);
 		if ($fordcar_json['elVehDTE'] == "") {
 			log::add('fordcar', 'debug', 'Type véhicule: Thermique');
 			$this->checkAndUpdateCmd('vehicle_type', 'thermique');
