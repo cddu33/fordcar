@@ -10,6 +10,13 @@
 >
 >Toutes les informations interprétées par le plugin sont disponible dans les log en mode debug.
 
+# 27/11/2022
+Correction prise en compte Veille Profonde
+
+Rajout garde-fou pour ne pas suppriemr les données lors de la veille profonde
+
+Correction prise en compte Firmawre upgrade
+
 # 22/10/2022
 correction bug python dépendance pkce
 
