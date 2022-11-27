@@ -835,9 +835,21 @@ class fordcar extends eqLogic {
 		$this->checkAndUpdateCmd('last', $fordcar_info);
 
 		$fordcar_info = $fordcar_json['firmwareUpgInProgress']['value'];
+		if ($fordcar_info == false) { 
+			$fordcar_info = 0 ;
+		}
+		else {
+			$fordcar_info = 1 ;
+		}
 		log::add('fordcar', 'debug', 'Mise à jour en cours: ' . $fordcar_info);
 		$this->checkAndUpdateCmd('maj', $fordcar_info);
 		$fordcar_info = $fordcar_json['deepSleepInProgress']['value'];
+		if ($fordcar_info == false) { 
+			$fordcar_info = 0 ;
+		}
+		else {
+			$fordcar_info = 1 ;
+		}
 		log::add('fordcar', 'debug', 'Veille profonde: ' . $fordcar_info);
 		$this->checkAndUpdateCmd('veille', $fordcar_info);
 
