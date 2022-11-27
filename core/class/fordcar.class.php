@@ -963,7 +963,9 @@ class fordcar extends eqLogic {
 			log::add('fordcar', 'debug', 'Coffre intérieur: ' . $fordcar_info);
 			$this->checkAndUpdateCmd('innertailgate', $fordcar_info);
 		}
-
+		else {
+			log::add('fordcar', 'info', 'Fichier Json Vide');
+		}
 			
 
   	}
