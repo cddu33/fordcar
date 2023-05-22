@@ -14,7 +14,7 @@
 	"maxDependancyInstallTime": 0,
 	"changelog": "https://cddu33.github.io/fordcar/#language#/changelog",
 	"documentation": "https://cddu33.github.io/fordcar/#language#/",
-	"changelog_beta": "https://cddu33.github.io/fordcar/#language#/changelog",
+	"changelog_beta": "https://cddu33.github.io/fordcar/#language#/changelog_beta",
 	"documentation_beta": "https://cddu33.github.io/fordcar/#language#/",
 	"link": {
 		"forum": "https://community.jeedom.com/tag/plugin-fordcar"
