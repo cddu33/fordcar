@@ -734,8 +734,8 @@ class fordcar extends eqLogic {
 		}
 			
 		// On definit le template à appliquer par rapport à la version Jeedom utilisée
-		if (version_compare(jeedom::version(), '4.3.0') >= 0) {
-			$template = 'fordcar_dashboard_v43';
+		if (version_compare(jeedom::version(), '4.4.0') >= 0) {
+			$template = 'fordcar_dashboard_v44';
 		}
 		else { $template = 'fordcar_dashboard'; }
 		$replace['#template#'] = $template;
