@@ -70,7 +70,6 @@
         <br />
         <div class="label">Dernière connexion avec le véhicule : <i data-cmd_id="#last_id#" class="Cmd#last_id# #last_history#"></i></div><br />
         <div class="label">Veille profonde : <i data-cmd_id="#veille_id#" class="Cmd#veille_id# #veille_history#"></i></div>
-        <div class="label">Mise à jour Firmware : <i data-cmd_id="#maj_id#" class="Cmd#maj_id# #maj_history#"></i></div>
     </div>
 
     <br />
@@ -178,16 +177,7 @@
         });
         jeedom.cmd.refreshValue([{cmd_id :'#huile_id#', display_value: '#huile#'}]);
 
-        jeedom.cmd.addUpdateFunction('#maj_id#',function(_options) {
-            if (_options.display_value == "1") {
-                $('.Cmd#maj_id#').empty().append('<i class="icon_red fa-2x fa-exclamation"></i>');
-            }
-            else {
-                $('.Cmd#maj_id#').empty().append('<i class="icon_green fas fa-ban"></i>');
-            }
-        });
-        jeedom.cmd.refreshValue([{cmd_id :'#maj_id#', display_value: '#maj#'}]);
-
+       
         jeedom.cmd.addUpdateFunction('#veille_id#',function(_options) {
             if (_options.display_value == "1") {
                 $('.Cmd#veille_id#').empty().append('<i class="icon_orange jeedomapp-done"></i>');

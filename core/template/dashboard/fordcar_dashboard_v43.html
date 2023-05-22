@@ -1,6 +1,6 @@
 <div id="fordcar_widget_ID" class="eqLogic-widget eqLogic tooltips fordcar_widget fordcar" style="width: 700px; height:auto; text-align:center; border:#border#; border-radius:#border-radius#; background-color:#background-color#; color:#color#; #style#;" data-eqType="#eqType#" data-translate-category="#translate_category#" data-category="#category#" data-tags="#tags#" data-eqLogic_id="#id#" data-eqLogic_uid="#uid#" data-version="dashboard">
     <span class="cmd refresh pull-right cursor" data-cmd_id="#refresh_id#" title="Rafraichir" onclick="jeedom.cmd.execute({id: #refresh_id#});"><i class="fas fa-sync"></i></span>
-
+coucou
     <center class="widget-name" style="padding-right: 0px;">
         <span class="object_name" style="font-size:1.1em ;display:none;">#object_name#</span>
         <a href="#eqLink#" style="font-size:1.1em ;#hideEqLogicName#">#name_display#</a>        
@@ -123,7 +123,7 @@
                 <td bgcolor="" width="280px" align="center">
                         <div class="label pull-center">Dernière connexion avec le véhicule : <br /><i data-cmd_id="#last_id#" class="Cmd#last_id# #last_history#"></i></div><br />
                         <div class="label pull-center">Veille profonde : <i data-cmd_id="#veille_id#" class="Cmd#veille_id# #veille_history#"></i></div><br />
-                        <div class="label pull-center">Mise à jour Firmware : <i data-cmd_id="#maj_id#" class="Cmd#maj_id# #maj_history#"></i></div>
+                      
                 </td>
             </tr>
         </table>
@@ -234,15 +234,7 @@
         });
         jeedom.cmd.refreshValue([{cmd_id :'#huile_id#', display_value: '#huile#'}]);
 
-        jeedom.cmd.addUpdateFunction('#maj_id#',function(_options) {
-            if (_options.display_value == "1") {
-                $('.Cmd#maj_id#').empty().append('<i class="icon_red fa-2x fa-exclamation"></i>');
-            }
-            else {
-                $('.Cmd#maj_id#').empty().append('<i class="icon_green fas fa-ban"></i>');
-            }
-        });
-        jeedom.cmd.refreshValue([{cmd_id :'#maj_id#', display_value: '#maj#'}]);
+        
 
         jeedom.cmd.addUpdateFunction('#veille_id#',function(_options) {
             if (_options.display_value == "1") {

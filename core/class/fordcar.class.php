@@ -250,17 +250,6 @@ class fordcar extends eqLogic {
 	  	$fordcarCmd->setSubType('string');
 	  	$fordcarCmd->save();
 
-	  	$fordcarCmd = $this->getCmd(null, 'maj');
-	  	if (!is_object($fordcarCmd)) {
-		  	$fordcarCmd = new fordcarCmd();
-		  	$fordcarCmd->setName(__('Mise à jour en cours', __FILE__));
-	  	}
-	  	$fordcarCmd->setEqLogic_id($this->getId());
-	  	$fordcarCmd->setLogicalId('maj');
-	  	$fordcarCmd->setType('info');
-	  	$fordcarCmd->setSubType('binary');
-	  	$fordcarCmd->save();
-
 	  	$fordcarCmd = $this->getCmd(null, 'veille');
 	  	if (!is_object($fordcarCmd)) {
 			$fordcarCmd = new fordcarCmd();
@@ -836,16 +825,7 @@ class fordcar extends eqLogic {
 			$fordcar_info = $fordcar_json['lastRefresh'];
 			log::add('fordcar', 'debug', 'dernière actualisation: ' . $fordcar_info . ' UTC');
 			$this->checkAndUpdateCmd('last', $fordcar_info);
-	
-			$fordcar_info = $fordcar_json['firmwareUpgInProgress']['value'];
-			if ($fordcar_info == false) { 
-				$fordcar_info = 0 ;
-			}
-			else {
-				$fordcar_info = 1 ;
-			}
-			log::add('fordcar', 'debug', 'Mise à jour en cours: ' . $fordcar_info);
-			$this->checkAndUpdateCmd('maj', $fordcar_info);
+
 			$fordcar_info = $fordcar_json['deepSleepInProgress']['value'];
 			if ($fordcar_info == false) { 
 				$fordcar_info = 0 ;

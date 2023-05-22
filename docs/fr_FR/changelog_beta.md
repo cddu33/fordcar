@@ -10,6 +10,12 @@
 >
 >Toutes les informations interprétées par le plugin sont disponible dans les log en mode debug.
 
+# 22/05/2023
+
+Suppression Firmware Upgrade car ne remonte pas
+
+Correction widget 4.4
+
 # 27/11/2022
 Correction prise en compte Veille Profonde
 
