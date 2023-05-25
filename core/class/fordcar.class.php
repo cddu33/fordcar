@@ -670,6 +670,17 @@ class fordcar extends eqLogic {
 	  	$fordcarCmd->setSubType('string');
 	  	$fordcarCmd->save();
 
+		$fordcarCmd = $this->getCmd(null, 'chargeEndTime');
+		if (!is_object($fordcarCmd)) {
+			$fordcarCmd = new fordcarCmd();
+			$fordcarCmd->setName(__('Fin de la charge', FILE));
+		}
+		$fordcarCmd->setEqLogic_id($this->getId());
+		$fordcarCmd->setLogicalId('chargeEndTime');
+		$fordcarCmd->setType('info');
+		$fordcarCmd->setSubType('string');
+		$fordcarCmd->save();
+
 
   	}
 
@@ -791,6 +802,9 @@ class fordcar extends eqLogic {
 				$fordcar_info = $fordcar_json['chargingStatus']['value'];
 				log::add('fordcar', 'debug', 'Etat de la charge: ' . $fordcar_info);
 				$this->checkAndUpdateCmd('chargingStatus', $fordcar_info);
+				$fordcar_info = $fordcar_json['chargeEndTime']['value'];
+				log::add('fordcar','debug', 'Fin de la charge: ' . $fordcar_info);
+				$this->checkAndUpdateCmd('chargeEndTime', $fordcar_info);
 			}
 			else {
 				log::add('fordcar', 'debug', 'Type véhicule: Hybride');
@@ -815,6 +829,14 @@ class fordcar extends eqLogic {
 				$fordcar_info = $fordcar_json['plugStatus']['value'];
 				log::add('fordcar', 'debug', 'Véhicule branché: ' . $fordcar_info);
 				$this->checkAndUpdateCmd('connectorStatus', $fordcar_info);
+
+				$fordcar_info = $fordcar_json['chargingStatus']['value'];
+				log::add('fordcar', 'debug', 'Etat de la charge: ' . $fordcar_info);
+				$this->checkAndUpdateCmd('chargingStatus', $fordcar_info);
+				
+				$fordcar_info = $fordcar_json['chargeEndTime']['value'];
+				log::add('fordcar','debug', 'Fin de la charge: ' . $fordcar_info);
+				$this->checkAndUpdateCmd('chargeEndTime', $fordcar_info);
 	
 			}
 	
