@@ -10,6 +10,10 @@
 >
 >Toutes les informations interprétées par le plugin sont disponible dans les log en mode debug.
 
+# 13/07/2023
+
+Ajout pour les voiture électrique et hybride de l'information: Heure de fin de la charge
+
 # 22/05/2023
 
 Suppression Firmware Upgrade car ne remonte pas
